@@ -1,0 +1,35 @@
+[package]
+name = "vibe-guard"
+version = "0.1.0"
+edition = "2021"
+description = "Semantic Diff & Intent Guard — an AST-level structural validation layer for AI-generated code changes."
+authors = ["zackyalgiffari"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/zackyalgiffari/vibe-guard"
+homepage = "https://github.com/zackyalgiffari/vibe-guard"
+keywords = ["ast", "diff", "code-review", "tree-sitter", "cli"]
+categories = ["command-line-utilities", "development-tools"]
+
+[[bin]]
+name = "vibe-guard"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0"
+clap = { version = "4.5", features = ["derive"] }
+dirs = "6.0"
+owo-colors = "4.2"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha2 = "0.10"
+toml = "0.9"
+tree-sitter = "0.25"
+tree-sitter-go = "0.25"
+tree-sitter-python = "0.25"
+tree-sitter-rust = "0.24"
+tree-sitter-typescript = "0.23"
+ureq = { version = "3.1", features = ["json"] }
+
+[dev-dependencies]
+tempfile = "3"

@@ -1,0 +1,8 @@
+/target
+
+# Editor / OS
+*.swp
+.DS_Store
+
+# Scratch / logs
+*.log
