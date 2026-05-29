@@ -6,3 +6,6 @@
 
 # Scratch / logs
 *.log
+
+# Internal design notes (kept local, not published)
+plan.md
